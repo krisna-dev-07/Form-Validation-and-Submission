@@ -76,18 +76,29 @@ const Form = () => {
 
   return (
     <div className="max-w-md mx-auto mt-10 p-8 bg-white shadow-md rounded-lg">
-    <form onSubmit={handleSubmit} className="space-y-6">
-      <div>
-        <label className="block text-sm font-medium text-gray-700">First Name:</label>
-        <input
-          type="text"
-          name="firstName"
-          value={formData.firstName}
-          onChange={handleChange}
-          className="mt-1 block w-full px-3 py-2 border border-solid border-2 border-#669966 rounded-md shadow-sm focus:outline-none focus:ring-#669966 focus:border-#669966 sm:text-sm"
-        />
-        {errors.firstName && <span className="text-red-500 text-sm">{errors.firstName}</span>}
-      </div>
+      <form onSubmit={handleSubmit} className="space-y-6">
+        <div>
+          <label className="block text-sm font-medium text-gray-700">First Name:</label>
+          <input
+            type="text"
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}
+            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          />
+          {errors.firstName && <span className="text-red-500 text-sm">{errors.firstName}</span>}
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-gray-700">Last Name:</label>
+          <input
+            type="text"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          />
+          {errors.lastName && <span className="text-red-500 text-sm">{errors.lastName}</span>}
+        </div>
         <div>
           <label className="block text-sm font-medium text-gray-700">Username:</label>
           <input
