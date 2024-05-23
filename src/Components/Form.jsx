@@ -21,7 +21,6 @@ const countryCodes = {
   Japan: "+81",
   Australia: "+61",
   France: "+33",
-  Canada: "+1",
   UAE: "+971",
   Singapore: "+65",
   Brazil: "+55"
